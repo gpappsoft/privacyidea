@@ -215,6 +215,13 @@ $breakpoint-compact: 1822px;
   white-space: normal;
   max-width: 45ch;
   line-height: 1.35;
+  padding-top: 2px;
+}
+
+// Fork: mat-toolbar hat eine feste Hoehe und overflow:hidden - der mehrzeilige
+// Hinweis wuerde sonst abgeschnitten. Regel steht bewusst nach .secondary-toolbar.
+.secondary-toolbar {
+  height: auto;
 }
 
 .footer-icons {
