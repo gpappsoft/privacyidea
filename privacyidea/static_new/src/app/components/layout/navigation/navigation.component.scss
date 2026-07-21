@@ -210,6 +210,13 @@ $breakpoint-compact: 1822px;
   height: 20px;
 }
 
+// Fork-Hinweis: umbricht auf ca. 49 Zeichen pro Zeile (.footer-text ist nowrap)
+.fork-notice {
+  white-space: normal;
+  max-width: 45ch;
+  line-height: 1.35;
+}
+
 .footer-icons {
   display: none;
   align-items: center;
