@@ -224,6 +224,24 @@ $breakpoint-compact: 1822px;
   height: auto;
 }
 
+// Fork: sec73-Icon fuer die Kompaktansicht (analog .mdi--netknights / .mdi--github
+// in styles/buttons.scss, bewusst hier lokal statt in der Upstream-Datei).
+// PLATZHALTER-GRAFIK - durch das echte sec73-Logo ersetzen. Die Maske ist
+// einfarbig, das SVG darf also nur Formen enthalten, keine eigenen Farben.
+.mdi--sec73 {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  background-color: currentColor;
+  --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M12 2L20.66 7v10L12 22L3.34 17V7z'/%3E%3C/svg%3E");
+  -webkit-mask-image: var(--svg);
+  mask-image: var(--svg);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+}
+
 .footer-icons {
   display: none;
   align-items: center;

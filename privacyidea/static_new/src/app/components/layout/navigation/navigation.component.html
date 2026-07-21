@@ -130,8 +130,7 @@
           target="_blank"
           >sec73</a
         ><br />
-        and is based on an independent fork. It is an unofficial community image with no affiliation to NetKnights
-        GmbH.
+        and is based on an independent fork.
       </div>
     </div>
     <div class="footer-icons">
@@ -152,6 +151,14 @@
         i18n-matTooltip
         matTooltip="Community contributors on GitHub">
         <mat-icon class="mdi--github"></mat-icon>
+      </button>
+      <button
+        mat-icon-button
+        (click)="openExternalLink('https://www.sec73.io')"
+        aria-label="sec73"
+        i18n-matTooltip="@@sec73.iconTooltip"
+        matTooltip="Provided by sec73">
+        <mat-icon class="mdi--sec73"></mat-icon>
       </button>
     </div>
   }
